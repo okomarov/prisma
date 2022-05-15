@@ -1,0 +1,18 @@
+generator client {
+  provider = "prisma-client-js"
+  output   = "./output"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DB_URL")
+}
+
+model Dummy {
+  id String @id @db.Uuid
+}
+
+enum Color {
+  RED
+  BLUE
+}
