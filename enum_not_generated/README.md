@@ -6,7 +6,12 @@ Prisma generates the enum in client's `index.d.ts`.
 
 # To reproduce
 Clone this repo, cd to the `/enum_not_generated` and then run:
+```bash
+yarn
+```
+or other equivalents.
 
+Spin up the database:
 ```bash
 docker compose up -d
 ```
